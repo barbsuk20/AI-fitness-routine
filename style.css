@@ -20,14 +20,24 @@ h1 {
   color: rgb(47, 46, 46);
   text-align: center;
 }
-form {
+.form-wrap {
   background-color: #e6a4b4;
   border: none;
   padding: 20px;
   border-radius: 10px;
-  display: flex;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   margin-bottom: 30px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+}
+form {
+  display: flex;
+}
+#hint {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 5px;
+  text-align: left;
+  opacity: 0.6;
+  margin-left: 10px;
 }
 .text-form {
   padding: 16px;
@@ -54,7 +64,6 @@ form {
   font-size: 16px;
   padding: 20px;
   border-left: 3px solid #c86b85;
-
   margin-bottom: 30px;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.04);
   color: rgb(47, 46, 46);
@@ -63,7 +72,9 @@ form {
 #answer strong {
   color: white;
 }
-
+.hidden {
+  display: none;
+}
 footer {
   font-size: 10px;
   opacity: 0.8;
@@ -72,5 +83,20 @@ footer {
     text-decoration: none;
     color: #c86b85;
     font-weight: bold;
+  }
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
   }
 }

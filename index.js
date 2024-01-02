@@ -19,6 +19,10 @@ function generateRoutine(event) {
 
   console.log("Generating answer...");
 
+  let answerElement = document.querySelector("#answer");
+  answerElement.classList.remove("hidden");
+  answerElement.innerHTML = `<div class="blink"> Generating the routine⏳...</div>`;
+
   axios.get(apiUrl).then(displayAnswer);
 }
 

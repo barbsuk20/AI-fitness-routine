@@ -13,19 +13,22 @@
       <header>
         <h1>AI Fitness Routine🏋️‍♂️</h1>
       </header>
-      <form id="routine-generator">
-        <input
-          type="text"
-          class="text-form"
-          placeholder="What would you like to train?"
-          autofocus
-          required
-          autocomplete="off"
-          id="user-instructions"
-        />
-        <input type="submit" id="submit-button" />
-      </form>
-      <div id="answer"></div>
+      <div class="form-wrap">
+        <form id="routine-generator">
+          <input
+            type="text"
+            class="text-form"
+            placeholder="What would you like to train?"
+            autofocus
+            required
+            autocomplete="off"
+            id="user-instructions"
+          />
+          <input type="submit" id="submit-button" />
+        </form>
+        <div id="hint">i.e: Bicep, Upper Body, Glutes.</div>
+      </div>
+      <div id="answer" class="hidden"></div>
       <footer>
         👩‍💻 This AI project was coded by
         <a href="https://github.com/barbsuk20" target="_blank">Barbara Moya</a>
