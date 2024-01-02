@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Fitness Routine Generator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -15,11 +16,12 @@
       <form id="routine-generator">
         <input
           type="text"
-          id="text-form"
+          class="text-form"
           placeholder="What would you like to train?"
           autofocus
           required
           autocomplete="off"
+          id="user-instructions"
         />
         <input type="submit" id="submit-button" />
       </form>

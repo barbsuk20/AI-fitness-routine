@@ -29,7 +29,7 @@ form {
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   margin-bottom: 30px;
 }
-#text-form {
+.text-form {
   padding: 16px;
   border: 1px solid #c86b85;
   width: 80%;
@@ -58,6 +58,10 @@ form {
   margin-bottom: 30px;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.04);
   color: rgb(47, 46, 46);
+}
+
+#answer strong {
+  color: white;
 }
 
 footer {
